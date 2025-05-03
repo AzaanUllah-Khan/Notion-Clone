@@ -1,0 +1,10 @@
+SaaS Landing Page (Notion Clone)
+
+Client Brief:
+"I'm launching a new SaaS and need a modern, clean landing page—similar to Notion. It should impress on first glance."
+What I Expect from You:
+•	A responsive hero section with headline + call to action
+•	Sections: Features, Testimonials, Pricing, and Footer
+•	Smooth scroll and hover effects
+•	Use Flexbox/Grid for layout
+•	Mobile-friendly layout a must

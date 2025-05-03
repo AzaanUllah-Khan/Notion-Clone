@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+header{
+    padding: 15px 13px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+header nav .logo h1{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+header nav .logo img{
+    width: 30px;
+}
+header nav .centre{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+header nav .centre button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 9px;
+    color: #111;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+header nav .centre button .cover{
+    border-radius: 5px;
+    position: absolute;    
+    background-color: #fff;
+    padding: 5px;
+    left: 0;
+    top: 100%;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 0 7px 1px rgba(0, 0, 0, 0.05);
+}
+header nav .centre button .cover .item{
+    padding: 5px 10px;
+    text-align: start;
+}
+header nav .centre button .cover .end{
+    text-align: left;
+    padding: 5px 10px;
+    color: #78736f;
+    font-weight: normal;
+    font-size: 12px;
+}
+header nav .centre button .cover .end a{
+    text-decoration: underline;
+}
+header nav .centre button .cover .end a:hover{
+    color: #097fe8;
+    text-decoration: underline;
+}
+header nav .centre button .cover .item:hover{
+    background-color: #0000000d;
+    border-radius: 5px;
+}
+header nav .centre button p{
+    font-size: 15px;
+}
+header nav .centre button i{
+    font-size: 10px;
+}
+header nav .centre button:hover{
+    background-color: #0000000d;
+}
+header nav .centre button:hover .cover{
+    display: flex;
+}
+header nav .centre button:hover i.fa-angle-down{
+    transform: rotate(-180deg);
+}
+header nav .right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+header nav .right .divider{
+    height: 20px;
+    width: 1px;
+    background-color: #ebebeb;
+}
+header nav .right button{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #191917;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 15px;
+}
+header nav .right button:hover{
+    background-color: #0000000d;
+}
+header nav .right button:nth-last-child(1){
+    background-color: #191917;
+    color: white;
+}
+header nav .right button:nth-last-child(1):hover{
+    background-color: #31302e;
+}
+header nav .centre button:nth-child(1) .cover{
+    width: 300px;
+}
+header nav .centre button:nth-child(2) .cover{
+    width: 200px;
+}
+header nav .centre button:nth-child(3) .cover{
+    width: 110px;
+}
+header nav .centre button:nth-child(4) .cover{
+    width: 220px;
+}
+header nav .centre button .cover.special .item{
+    display: flex;
+    justify-content: stretch;
+    gap: 12px;
+    align-items: center;
+}
+header nav .centre button .cover.special .item .col{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+header nav .centre button .cover.special .item .col span{
+    font-weight: normal;
+    color: #0009;
+}
+header nav .centre button .cover.special .item .log{
+    padding: 4px;
+    border: 1px solid #0000000d;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+header nav .centre button .cover.special .item .log i{
+    font-size: 1rem;
+    color: #000000e0;
+}
