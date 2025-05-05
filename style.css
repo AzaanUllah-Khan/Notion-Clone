@@ -1,44 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
 }
-header{
+
+header {
     padding: 15px 13px;
 }
-header nav{
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav .left{
+
+header nav .left {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 30px;
 }
-header nav .logo{
+
+header nav .logo {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-header nav .logo h1{
+
+header nav .logo h1 {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: -1px;
 }
-header nav .logo img{
+
+header nav .logo img {
     width: 30px;
 }
-header nav .centre{
+
+header nav .centre {
     display: flex;
     justify-content: start;
     align-items: center;
 }
-header nav .centre button{
+
+header nav .centre button {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -53,9 +61,10 @@ header nav .centre button{
     transition: all 0.2s ease-in-out;
     position: relative;
 }
-header nav .centre button .cover{
+
+header nav .centre button .cover {
     border-radius: 5px;
-    position: absolute;    
+    position: absolute;
     background-color: #fff;
     padding: 5px;
     left: 0;
@@ -65,55 +74,68 @@ header nav .centre button .cover{
     flex-direction: column;
     box-shadow: 0px 0 7px 1px rgba(0, 0, 0, 0.05);
 }
-header nav .centre button .cover .item{
+
+header nav .centre button .cover .item {
     padding: 5px 10px;
     text-align: start;
 }
-header nav .centre button .cover .end{
+
+header nav .centre button .cover .end {
     text-align: left;
     padding: 5px 10px;
     color: #78736f;
     font-weight: normal;
     font-size: 12px;
 }
-header nav .centre button .cover .end a{
+
+header nav .centre button .cover .end a {
     text-decoration: underline;
 }
-header nav .centre button .cover .end a:hover{
+
+header nav .centre button .cover .end a:hover {
     color: #097fe8;
     text-decoration: underline;
 }
-header nav .centre button .cover .item:hover{
+
+header nav .centre button .cover .item:hover {
     background-color: #0000000d;
     border-radius: 5px;
 }
-header nav .centre button p{
+
+header nav .centre button p {
     font-size: 15px;
 }
-header nav .centre button i{
+
+header nav .centre button i {
     font-size: 10px;
 }
-header nav .centre button:hover{
+
+header nav .centre button:hover {
     background-color: #0000000d;
 }
-header nav .centre button:hover .cover{
+
+header nav .centre button:hover .cover {
     display: flex;
 }
-header nav .centre button:hover i.fa-angle-down{
+
+header nav .centre button:hover i.fa-angle-down {
     transform: rotate(-180deg);
 }
-header nav .right{
+
+header nav .right {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 10px;
 }
-header nav .right .divider{
+
+header nav .right .divider {
     height: 20px;
     width: 1px;
     background-color: #ebebeb;
 }
-header nav .right button{
+
+header nav .right button {
     padding: 5px 10px;
     background-color: transparent;
     border: none;
@@ -124,44 +146,55 @@ header nav .right button{
     cursor: pointer;
     font-size: 15px;
 }
-header nav .right button:hover{
+
+header nav .right button:hover {
     background-color: #0000000d;
 }
-header nav .right button:nth-last-child(1){
+
+header nav .right button:nth-last-child(1) {
     background-color: #191917;
     color: white;
 }
-header nav .right button:nth-last-child(1):hover{
+
+header nav .right button:nth-last-child(1):hover {
     background-color: #31302e;
 }
-header nav .centre button:nth-child(1) .cover{
+
+header nav .centre button:nth-child(1) .cover {
     width: 300px;
 }
-header nav .centre button:nth-child(2) .cover{
+
+header nav .centre button:nth-child(2) .cover {
     width: 200px;
 }
-header nav .centre button:nth-child(3) .cover{
+
+header nav .centre button:nth-child(3) .cover {
     width: 110px;
 }
-header nav .centre button:nth-child(4) .cover{
+
+header nav .centre button:nth-child(4) .cover {
     width: 220px;
 }
-header nav .centre button .cover.special .item{
+
+header nav .centre button .cover.special .item {
     display: flex;
     justify-content: stretch;
     gap: 12px;
     align-items: center;
 }
-header nav .centre button .cover.special .item .col{
+
+header nav .centre button .cover.special .item .col {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
-header nav .centre button .cover.special .item .col span{
+
+header nav .centre button .cover.special .item .col span {
     font-weight: normal;
     color: #0009;
 }
-header nav .centre button .cover.special .item .log{
+
+header nav .centre button .cover.special .item .log {
     padding: 4px;
     border: 1px solid #0000000d;
     background-color: #fff;
@@ -172,7 +205,282 @@ header nav .centre button .cover.special .item .log{
     width: 30px;
     height: 30px;
 }
-header nav .centre button .cover.special .item .log i{
+
+header nav .centre button .cover.special .item .log i {
     font-size: 1rem;
     color: #000000e0;
+}
+
+header nav .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+header nav .toggle i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+
+    header nav .centre,
+    header nav .right {
+        display: none;
+    }
+
+    header nav .toggle {
+        display: flex;
+    }
+}
+
+main {
+    padding: 0 round(up, 7.22223%, .2rem);
+}
+
+main .firstSec {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1252px;
+}
+
+main .first.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .first.right {
+    display: flex;
+    align-self: flex-end;
+}
+
+main .first.right video {
+    width: 100%;
+    aspect-ratio: 1022 / 540;
+}
+
+main .first.left .teams {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+}
+
+main .first.left .teams img {
+    width: 85px;
+    object-fit: contain;
+}
+
+main .first.left span {
+    margin-top: 15px;
+    color: #78736f;
+}
+
+main .first.left h1 {
+    font-size: 76.5px;
+    line-height: 95%;
+    font-weight: 600;
+    letter-spacing: -.04em;
+}
+
+main .first.left p {
+    font-size: 1.375rem;
+    margin-top: 10px;
+}
+
+main .first.left .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+main .first.left .buttons button {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 11px 20px;
+    font-weight: 600;
+    letter-spacing: -.05px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+main .first.left .buttons button:nth-child(1) {
+    background-color: #0582ff;
+    color: #ebf5fe;
+}
+
+main .first.left .buttons button:nth-child(1):hover {
+    background-color: #045ac3;
+}
+
+main .first.left .buttons button:nth-child(2):hover {
+    background-color: #d6e1f5;
+}
+
+main .first.left .buttons button:nth-child(2) {
+    background-color: #ebf5fe;
+    color: #0582ff;
+}
+
+@media screen and (max-width: 1162px) {
+    main .firstSec .first.left {
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    main .firstSec .first.left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .firstSec .first.right {
+        align-self: center;
+    }
+
+    main .firstSec .first.left .buttons {
+        flex-direction: column;
+    }
+
+    main .firstSec {
+        flex-direction: column;
+        margin: 64px 0 0;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        padding: 0 30px;
+    }
+
+    main .firstSec {
+        margin: 25px 0 0;
+    }
+
+    main .firstSec .first.left {
+        align-items: start;
+        text-align: left;
+    }
+
+    main .firstSec .first.left h1 {
+        font-size: 50px;
+    }
+
+    main .firstSec .first.left .buttons,
+    main .firstSec .first.left .buttons button {
+        width: 100%;
+    }
+
+    main .firstSec .first.left .teams {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 331px) {
+    main .firstSec .first.left h1 {
+        font-size: 2.5rem;
+    }
+
+    main .firstSec .first.left p {
+        font-size: 1rem;
+    }
+}
+
+main .secondSec {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1252px;
+}
+
+main .secondSec .cont {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+}
+
+main .secondSec .cont .selects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+main .secondSec .cont img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px 1px #0000000c;
+    border: 1px solid #e8e8e8;
+    transition: opacity .2s ease-in-out;
+    opacity: 1;
+}
+
+main .secondSec .cont .selects button.active {
+    background-color: #e5e5e5;
+}
+
+main .secondSec .cont .selects button {
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+main .secondSec .cont .selects button i {
+    color: #191917;
+}
+
+main .secondSec .cont .selects button:hover {
+    background-color: #e5e5e5;
+}
+
+@media screen and (max-width: 1000px) {
+    main .secondSec .cont .selects {
+        gap: 5px;
+    }
+
+    main .secondSec .cont .selects button {
+        border: none;
+    }
+
+    main .secondSec .cont .selects button i {
+        color: #000000cc;
+    }
+
+    main .secondSec .cont {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    main .secondSec {
+        margin: 0 auto;
+    }
+
+    main .secondSec .cont {
+        gap: 10px;
+    }
 }
