@@ -42,13 +42,22 @@ function updateActiveButton() {
     }, 200);
 }
 
-let carouselInterval = setInterval(updateActiveButton, 3500);
+let carouselInterval = setInterval(updateActiveButton, 5000);
 
 buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
         clearInterval(carouselInterval);
         i = index;
         updateActiveButton();
-        carouselInterval = setInterval(updateActiveButton, 3500);
+        carouselInterval = setInterval(updateActiveButton, 5000);
     });
 });
+
+window.addEventListener("scroll",(()=>{
+    if(window.scrollY > 100){
+        document.getElementById("header").style.boxShadow = "0 1.5px 2px #0000001a"
+    }
+    else{
+        document.getElementById("header").style.boxShadow = "none"
+    }
+}))

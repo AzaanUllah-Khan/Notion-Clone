@@ -9,6 +9,12 @@
 
 header {
     padding: 15px 13px;
+    background-color: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow .3s ease-in-out;
 }
 
 header nav {
@@ -243,7 +249,7 @@ main .firstSec {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    margin: 30px auto;
+    margin: 30px auto 0;
     width: 100%;
     max-width: 1252px;
 }
@@ -399,7 +405,7 @@ main .first.left .buttons button:nth-child(2) {
 }
 
 main .secondSec {
-    margin: 50px auto;
+    margin: 80px auto 0;
     width: 100%;
     max-width: 1252px;
 }
@@ -483,4 +489,127 @@ main .secondSec .cont .selects button:hover {
     main .secondSec .cont {
         gap: 10px;
     }
+}
+main .thirdSec{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    margin: 150px auto 0;
+}
+
+main .thirdSec .top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+}
+main .thirdSec .top .headings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main .thirdSec .top .headings h1{
+    color: #191917;
+    font-size: 3.75rem;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    line-height: 100%;
+}
+main .thirdSec .top .headings p{
+    color: #0009;
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+main .thirdSec .top .headings a{
+    color: #097fe8;
+    font-size: 1.125rem;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+main .thirdSec .top .headings a span:nth-child(1){
+    color: #097fe8;
+}
+main .thirdSec .top .headings a span:nth-child(2){
+    font-size: 1rem;
+}
+main .thirdSec .top .headings a:hover span:nth-child(1){
+    text-decoration: underline;
+    text-decoration-color: #111;
+}
+main .thirdSec .top .headings a:hover span:nth-child(2) {
+    color: #111;
+}
+main .thirdSec .top .icons{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+}
+main .thirdSec .top .icons .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+main .thirdSec .top .icons .card .videocover{
+    margin-bottom: 12px;
+    width: 80px;
+    display: flex;
+    align-self: flex-start;
+}
+main .thirdSec .top .icons .card .videocover video{
+    aspect-ratio: 80/80;
+    width: 100%;
+}
+main .thirdSec .top .icons .card h1{
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: start;
+    align-self: flex-start;
+}
+main .thirdSec .top .icons .card p{
+    font-size: 1rem;
+    text-align: start;
+    align-self: flex-start;
+    color: #78736f;
+    margin-top: 3px;
+}
+main .thirdSec .bottom{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+main .thirdSec .bottom video{
+    width: 100%;
+    border-radius: 15px;
+}
+main .thirdSec .bottom .replaces{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+}
+main .thirdSec .bottom .replaces .one{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+main .thirdSec .bottom .replaces .one p{
+    color: #78736f;
+    font-size: 16px;
+    font-weight: 400;
+}
+main .thirdSec .bottom .replaces .one img{
+    width: 25px;
+}
+main .thirdSec .bottom .replaces h1{
+    font-weight: 700;
+    font-size: 16px;
 }
