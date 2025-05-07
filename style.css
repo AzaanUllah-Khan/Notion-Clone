@@ -638,5 +638,19 @@ main .thirdSec .bottom .replaces h1{
     main .thirdSec .top .icons .card{
         flex-direction: row;
         width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    main .thirdSec .top .icons .card p{
+        margin: 0;
+    }
+    main .thirdSec .top .icons .card .videocover{
+        width: 40px;
+        margin: 0;
+    }
+    main .thirdSec .bottom{
+        padding: 40px 0 0;
+        border-top: 1px solid #0000001a;
     }
 }
