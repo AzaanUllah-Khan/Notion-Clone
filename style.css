@@ -157,7 +157,7 @@ header nav .right button:hover {
     background-color: #0000000d;
 }
 
-header nav .right button:nth-last-child(1) {
+header nav .right button:nth-last-child(2) {
     background-color: #191917;
     color: white;
 }
@@ -231,13 +231,29 @@ header nav .toggle i {
 
 @media screen and (max-width: 1000px) {
 
-    header nav .centre,
-    header nav .right {
+    header nav .centre{
+        display: none;
+    }
+    header nav .right button:nth-child(1) {
+        display: none;
+    }
+    header nav .right div {
+        display: none;
+    }
+    header nav .right button:nth-child(3) {
         display: none;
     }
 
-    header nav .toggle {
+    header nav .right {
+        gap: 20px;
+    }
+    header nav .right .toggle {
         display: flex;
+    }
+}
+@media screen and (max-width: 330px) {
+    header nav .right button:nth-child(4) {
+        display: none;
     }
 }
 
@@ -598,6 +614,7 @@ main .thirdSec .bottom .replaces{
     align-items: center;
     justify-content: start;
     gap: 12px;
+    flex-wrap: wrap;
 }
 main .thirdSec .bottom .replaces .one{
     display: flex;
@@ -631,6 +648,12 @@ main .thirdSec .bottom .replaces h1{
     }
 }
 @media screen and (max-width: 500px) {
+    main .thirdSec .top .headings h1{
+        font-size: 2rem;
+    }
+    main .thirdSec .top .headings p{
+        font-size: 1rem;
+    }
     main .thirdSec .top .icons{
         flex-direction: column;
         width: 100%;
@@ -652,5 +675,17 @@ main .thirdSec .bottom .replaces h1{
     main .thirdSec .bottom{
         padding: 40px 0 0;
         border-top: 1px solid #0000001a;
+    }
+}
+@media screen and (max-width: 330px) {
+    main .thirdSec .bottom .replaces .one img{
+        width: 16px;
+    }
+    main .thirdSec .bottom .replaces .one p{
+        font-size: 14px;
+    }
+    main .thirdSec .bottom .replaces h1{
+        font-size: 14px;
+        font-weight: 600;
     }
 }
