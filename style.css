@@ -503,11 +503,13 @@ main .thirdSec .top{
     align-items: flex-end;
     justify-content: space-between;
     gap: 50px;
+    width: 100%;
 }
 main .thirdSec .top .headings{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 90%;
 }
 main .thirdSec .top .headings h1{
     color: #191917;
@@ -549,6 +551,7 @@ main .thirdSec .top .icons{
     align-items: start;
     justify-content: space-between;
     gap: 20px;
+    width: 100%;
 }
 main .thirdSec .top .icons .card{
     display: flex;
@@ -612,4 +615,28 @@ main .thirdSec .bottom .replaces .one img{
 main .thirdSec .bottom .replaces h1{
     font-weight: 700;
     font-size: 16px;
+}
+@media screen and (max-width: 960px) {
+    main .thirdSec .top{
+        flex-direction: column;
+    }
+    main .thirdSec .top .headings{
+        width: 100%;
+    }
+    main .thirdSec .top .icons{
+        width: 100%;
+    }
+    main .thirdSec .top .icons .card{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 500px) {
+    main .thirdSec .top .icons{
+        flex-direction: column;
+        width: 100%;
+    }
+    main .thirdSec .top .icons .card{
+        flex-direction: row;
+        width: 100%;
+    }
 }
