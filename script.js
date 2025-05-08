@@ -1,3 +1,4 @@
+const videos = document.querySelectorAll('video');
 var toggleBar = document.getElementById("toggle");
 toggleBar.addEventListener("click", () => {
     if (toggleBar.className == "fa-solid fa-bars") {
@@ -53,11 +54,38 @@ buttons.forEach((button, index) => {
     });
 });
 
-window.addEventListener("scroll",(()=>{
-    if(window.scrollY > 100){
+window.addEventListener("scroll", (() => {
+    if (window.scrollY > 100) {
         document.getElementById("header").style.boxShadow = "0 1.5px 2px #0000001a"
     }
-    else{
+    else {
         document.getElementById("header").style.boxShadow = "none"
     }
 }))
+
+
+videos.forEach(video => {
+    video.setAttribute('muted', true);
+    video.setAttribute('playsinline', true);
+    video.removeAttribute('autoplay');
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+            video.play().catch(() => { });
+        } else {
+            video.pause();
+        }
+    });
+}, {
+    threshold: 0.5
+});
+const startObserving = () => {
+    videos.forEach(video => observer.observe(video));
+    document.removeEventListener('click', startObserving);
+    document.removeEventListener('scroll', startObserving);
+};
+document.addEventListener('click', startObserving);
+document.addEventListener('scroll', startObserving);
