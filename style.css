@@ -232,15 +232,18 @@ header nav .toggle i {
 
 @media screen and (max-width: 1000px) {
 
-    header nav .centre{
+    header nav .centre {
         display: none;
     }
+
     header nav .right button:nth-child(1) {
         display: none;
     }
+
     header nav .right div {
         display: none;
     }
+
     header nav .right button:nth-child(3) {
         display: none;
     }
@@ -248,10 +251,12 @@ header nav .toggle i {
     header nav .right {
         gap: 20px;
     }
+
     header nav .right .toggle {
         display: flex;
     }
 }
+
 @media screen and (max-width: 330px) {
     header nav .right button:nth-child(4) {
         display: none;
@@ -507,7 +512,8 @@ main .secondSec .cont .selects button:hover {
         gap: 10px;
     }
 }
-main .thirdSec{
+
+main .thirdSec {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -516,32 +522,36 @@ main .thirdSec{
     max-width: 1252px;
 }
 
-main .thirdSec .top{
+main .thirdSec .top {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     gap: 50px;
     width: 100%;
 }
-main .thirdSec .top .headings{
+
+main .thirdSec .top .headings {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
 }
-main .thirdSec .top .headings h1{
+
+main .thirdSec .top .headings h1 {
     color: #191917;
     font-size: 3.75rem;
     font-weight: 700;
     letter-spacing: -.04em;
     line-height: 100%;
 }
-main .thirdSec .top .headings p{
+
+main .thirdSec .top .headings p {
     color: #0009;
     font-size: 1.125rem;
     margin-top: 10px;
 }
-main .thirdSec .top .headings a{
+
+main .thirdSec .top .headings a {
     color: #097fe8;
     font-size: 1.125rem;
     margin-top: 10px;
@@ -551,159 +561,194 @@ main .thirdSec .top .headings a{
     gap: 5px;
     font-weight: 600;
 }
-main .thirdSec .top .headings a span:nth-child(1){
+
+main .thirdSec .top .headings a span:nth-child(1) {
     color: #097fe8;
 }
-main .thirdSec .top .headings a span:nth-child(2){
+
+main .thirdSec .top .headings a span:nth-child(2) {
     font-size: 1rem;
 }
-main .thirdSec .top .headings a:hover span:nth-child(1){
+
+main .thirdSec .top .headings a:hover span:nth-child(1) {
     text-decoration: underline;
     text-decoration-color: #111;
 }
+
 main .thirdSec .top .headings a:hover span:nth-child(2) {
     color: #111;
 }
-main .thirdSec .top .icons{
+
+main .thirdSec .top .icons {
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 20px;
     width: 100%;
 }
-main .thirdSec .top .icons .card{
+
+main .thirdSec .top .icons .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
     width: 30%;
 }
-main .thirdSec .top .icons .card .videocover{
+
+main .thirdSec .top .icons .card .videocover {
     margin-bottom: 12px;
     width: 80px;
     display: flex;
     align-self: flex-start;
 }
-main .thirdSec .top .icons .card .videocover video{
+
+main .thirdSec .top .icons .card .videocover video {
     aspect-ratio: 80/80;
     width: 100%;
 }
-main .thirdSec .top .icons .card h1{
+
+main .thirdSec .top .icons .card h1 {
     font-weight: 700;
     font-size: 1rem;
     text-align: start;
     align-self: flex-start;
 }
-main .thirdSec .top .icons .card p{
+
+main .thirdSec .top .icons .card p {
     font-size: 1rem;
     text-align: start;
     align-self: flex-start;
     color: #78736f;
     margin-top: 3px;
 }
-main .thirdSec .bottom{
+
+main .thirdSec .bottom {
     width: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
 }
-main .thirdSec .bottom video{
+
+main .thirdSec .bottom video {
     width: 100%;
     border-radius: 15px;
 }
-main .thirdSec .bottom .replaces{
+
+main .thirdSec .bottom .replaces {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 12px;
     flex-wrap: wrap;
 }
-main .thirdSec .bottom .replaces .one{
+
+main .thirdSec .bottom .replaces .one {
     display: flex;
     align-items: center;
     gap: 3px;
 }
-main .thirdSec .bottom .replaces .one p{
+
+main .thirdSec .bottom .replaces .one p {
     color: #78736f;
     font-size: 16px;
     font-weight: 400;
 }
-main .thirdSec .bottom .replaces .one img{
+
+main .thirdSec .bottom .replaces .one img {
     width: 25px;
 }
-main .thirdSec .bottom .replaces h1{
+
+main .thirdSec .bottom .replaces h1 {
     font-weight: 700;
     font-size: 16px;
 }
+
 @media screen and (max-width: 960px) {
-    main .thirdSec .top{
+    main .thirdSec .top {
         flex-direction: column;
     }
-    main .thirdSec .top .headings{
+
+    main .thirdSec .top .headings {
         width: 100%;
     }
-    main .thirdSec .top .icons{
+
+    main .thirdSec .top .icons {
         width: 100%;
     }
-    main .thirdSec .top .icons .card{
+
+    main .thirdSec .top .icons .card {
         width: 30%;
     }
 }
+
 @media screen and (max-width: 500px) {
-    main .thirdSec .top .headings h1{
+    main .thirdSec .top .headings h1 {
         font-size: 2rem;
     }
-    main .thirdSec .top .headings p{
+
+    main .thirdSec .top .headings p {
         font-size: 1rem;
     }
-    main .thirdSec .top .icons{
+
+    main .thirdSec .top .icons {
         flex-direction: column;
         width: 100%;
     }
-    main .thirdSec .top .icons .card{
+
+    main .thirdSec .top .icons .card {
         flex-direction: row;
         width: 100%;
         align-items: center;
         justify-content: flex-start;
         gap: 20px;
     }
-    main .thirdSec .top .icons .card p{
+
+    main .thirdSec .top .icons .card p {
         margin: 0;
     }
-    main .thirdSec .top .icons .card .videocover{
+
+    main .thirdSec .top .icons .card .videocover {
         width: 40px;
         margin: 0;
     }
-    main .thirdSec .bottom{
+
+    main .thirdSec .bottom {
         padding: 40px 0 0;
         border-top: 1px solid #0000001a;
     }
-    main .thirdSec .bottom video{
+
+    main .thirdSec .bottom video {
         height: 350px;
         object-fit: cover;
         object-position: right;
     }
-    main .thirdSec:nth-child(4) .bottom video{
+
+    main .thirdSec:nth-child(4) .bottom video {
         object-position: left;
     }
 }
+
 @media screen and (max-width: 330px) {
-    main .thirdSec .bottom .replaces .one img{
+    main .thirdSec .bottom .replaces .one img {
         width: 16px;
     }
-    main .thirdSec .bottom .replaces .one p{
+
+    main .thirdSec .bottom .replaces .one p {
         font-size: 14px;
     }
-    main .thirdSec .bottom .replaces h1{
+
+    main .thirdSec .bottom .replaces h1 {
         font-size: 14px;
         font-weight: 600;
     }
-    main .thirdSec .bottom video{
+
+    main .thirdSec .bottom video {
         height: 250px;
     }
 }
-main .fourthSec{
+
+main .fourthSec {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -711,12 +756,14 @@ main .fourthSec{
     margin: 150px auto 0;
     max-width: 1252px;
 }
-main .fourthSec .top{
+
+main .fourthSec .top {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-main .fourthSec .top h1{
+
+main .fourthSec .top h1 {
     color: #191917;
     font-size: 3.75rem;
     font-weight: 700;
@@ -724,7 +771,8 @@ main .fourthSec .top h1{
     line-height: 100%;
     padding-right: 25%;
 }
-main .fourthSec .top a{
+
+main .fourthSec .top a {
     color: #097fe8;
     font-size: 1.15rem;
     margin-top: 15px;
@@ -734,97 +782,171 @@ main .fourthSec .top a{
     gap: 5px;
     font-weight: 500;
 }
-main .fourthSec .top a span:nth-child(1){
+
+main .fourthSec .top a span:nth-child(1) {
     color: #097fe8;
 }
-main .fourthSec .top a span:nth-child(2){
+
+main .fourthSec .top a span:nth-child(2) {
     font-size: 1rem;
 }
-main .fourthSec .top a:hover span:nth-child(1){
+
+main .fourthSec .top a:hover span:nth-child(1) {
     text-decoration: underline;
     text-decoration-color: #111;
 }
+
 main .fourthSec .top a:hover span:nth-child(2) {
     color: #111;
 }
-main .fourthSec .bottom{
+
+main .fourthSec .bottom {
     width: 100%;
     display: flex;
     align-items: stretch;
     gap: 28px;
+    margin-bottom: 2000px;
 }
-main .fourthSec .bottom .left{
+
+main .fourthSec .bottom .left {
     width: 50%;
 }
-main .fourthSec .bottom .right{
+
+main .fourthSec .bottom .right {
     width: 50%;
 }
-main .fourthSec .bottom .card{
+
+main .fourthSec .bottom .card {
     background-color: #f6f5f3;
     border-radius: 12px;
     padding: 24px 32px;
     border: 1px solid #f6f5f3;
     cursor: pointer;
 }
-main .fourthSec .bottom .lefts.card{
+
+main .fourthSec .bottom .lefts.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
     height: 100%;
-    background: url("./Assets/company-wiki.avif");
-    background-color: #f6f5f3;
-    background-size: 75%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
+    border-radius: 12px;
+    overflow: hidden;
+    gap: 30px;
 }
-main .fourthSec .bottom .card svg{
+
+main .fourthSec .bottom .lefts.card .img-wrapper {
+    margin-top: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    width: 100%;
+    margin: auto auto 0 0;
+    align-self: flex-start;
+    position: relative;
+}
+
+main .fourthSec .bottom .lefts.card picture {
+    display: flex;
+    height: calc(100% + 24px);
+    width: calc(100% + 32px);
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-top-left-radius: 0.75rem;
+    outline: 1px solid #00000008;
+    max-width: calc(100% + 32px * 2);
+    max-height: calc(100% + 24px * 2);
+    margin: auto;
+    box-shadow: 0 4px 18px #0000000a, 0 2.025px 7.84688px rgba(0, 0, 0, .027), 0 .8px 2.925px #00000005, 0 .175px 1.04062px rgba(0, 0, 0, .013), 0 0 1px #fff9;
+}
+main .fourthSec .bottom .lefts.card img {
+    color: transparent;
+    object-fit: cover;
+    object-position: left top;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1170px;
+    height: auto;
+    display: block;
+    margin-right: 0;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-right: auto;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+main .fourthSec .bottom .lefts.card .txt svg {
     width: 54px;
     aspect-ratio: 1/1;
 }
-main .fourthSec .bottom .card h1{
+
+main .fourthSec .bottom .lefts.card .txt h1 {
     font-size: 1.125rem;
     margin-top: 10px;
 }
-main .fourthSec .bottom .left .lefts.card svg{
+
+main .fourthSec .bottom .card svg {
+    width: 54px;
+    aspect-ratio: 1/1;
+}
+
+main .fourthSec .bottom .card h1 {
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+
+main .fourthSec .bottom .left .lefts.card svg {
     fill: #f64932;
     color: #f64932;
 }
-main .fourthSec .bottom .right{
+
+main .fourthSec .bottom .right {
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
-main .fourthSec .bottom .right .row{
+
+main .fourthSec .bottom .right .row {
     display: flex;
     flex-direction: row;
     gap: 28px;
     width: 100%;
 }
-main .fourthSec .bottom .right .row .rights.card{
+
+main .fourthSec .bottom .right .row .rights.card {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
-main .fourthSec .bottom .right .row:nth-child(1) .rights.card:nth-child(1) svg{
+
+main .fourthSec .bottom .right .row:nth-child(1) .rights.card:nth-child(1) svg {
     fill: #0980e8;
     color: #0980e8;
 }
-main .fourthSec .bottom .right .row:nth-child(1) .rights.card:nth-child(2) svg{
+
+main .fourthSec .bottom .right .row:nth-child(1) .rights.card:nth-child(2) svg {
     fill: #ff6d00;
     color: #ff6d00;
 }
-main .fourthSec .bottom .right .row:nth-child(2) .rights.card:nth-child(1) svg{
+
+main .fourthSec .bottom .right .row:nth-child(2) .rights.card:nth-child(1) svg {
     fill: #ffb10f;
     color: #ffb10f;
 }
-main .fourthSec .bottom .right .row:nth-child(2) .rights.card:nth-child(2) svg{
+
+main .fourthSec .bottom .right .row:nth-child(2) .rights.card:nth-child(2) svg {
     fill: #f54931;
     color: #f54931;
 }
-main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(1) svg{
+
+main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(1) svg {
     fill: #27918d;
     color: #27918d;
 }
-main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(2) svg{
+
+main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(2) svg {
     fill: #9949e8;
     color: #9949e8;
 }
