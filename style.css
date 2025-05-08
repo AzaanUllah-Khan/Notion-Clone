@@ -678,6 +678,14 @@ main .thirdSec .bottom .replaces h1{
         padding: 40px 0 0;
         border-top: 1px solid #0000001a;
     }
+    main .thirdSec .bottom video{
+        height: 350px;
+        object-fit: cover;
+        object-position: right;
+    }
+    main .thirdSec:nth-child(4) .bottom video{
+        object-position: left;
+    }
 }
 @media screen and (max-width: 330px) {
     main .thirdSec .bottom .replaces .one img{
@@ -689,5 +697,8 @@ main .thirdSec .bottom .replaces h1{
     main .thirdSec .bottom .replaces h1{
         font-size: 14px;
         font-weight: 600;
+    }
+    main .thirdSec .bottom video{
+        height: 250px;
     }
 }
