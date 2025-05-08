@@ -852,27 +852,27 @@ main .fourthSec .bottom .lefts.card picture {
     justify-content: flex-end;
     align-items: flex-end;
     border-top-left-radius: 0.75rem;
-    outline: 1px solid #00000008;
     max-width: calc(100% + 32px * 2);
     max-height: calc(100% + 24px * 2);
     margin: auto;
-    box-shadow: 0 4px 18px #0000000a, 0 2.025px 7.84688px rgba(0, 0, 0, .027), 0 .8px 2.925px #00000005, 0 .175px 1.04062px rgba(0, 0, 0, .013), 0 0 1px #fff9;
 }
 main .fourthSec .bottom .lefts.card img {
     color: transparent;
     object-fit: cover;
-    object-position: left top;
+    object-position: right bottom;
     max-width: 100%;
     max-height: 100%;
     width: 1170px;
     height: auto;
     display: block;
     margin-right: 0;
-    align-self: flex-start;
+    align-self: flex-end;
     justify-self: flex-start;
     margin-right: auto;
     z-index: 1;
     border-radius: inherit;
+    outline: 1px solid #00000008;
+    box-shadow: 0 4px 18px #00000007, 0 2.025px 7.84688px rgba(0, 0, 0, .027), 0 .8px 2.925px #00000005, 0 .175px 1.04062px rgba(0, 0, 0, .013), 0 0 1px #fff9;
 }
 
 main .fourthSec .bottom .lefts.card .txt svg {
