@@ -574,6 +574,7 @@ main .thirdSec .top .icons .card{
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
+    width: 30%;
 }
 main .thirdSec .top .icons .card .videocover{
     margin-bottom: 12px;
