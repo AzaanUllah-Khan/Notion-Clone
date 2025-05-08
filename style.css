@@ -513,6 +513,7 @@ main .thirdSec{
     width: 100%;
     gap: 40px;
     margin: 150px auto 0;
+    max-width: 1252px;
 }
 
 main .thirdSec .top{
@@ -701,4 +702,129 @@ main .thirdSec .bottom .replaces h1{
     main .thirdSec .bottom video{
         height: 250px;
     }
+}
+main .fourthSec{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    margin: 150px auto 0;
+    max-width: 1252px;
+}
+main .fourthSec .top{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+main .fourthSec .top h1{
+    color: #191917;
+    font-size: 3.75rem;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    line-height: 100%;
+    padding-right: 25%;
+}
+main .fourthSec .top a{
+    color: #097fe8;
+    font-size: 1.15rem;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+main .fourthSec .top a span:nth-child(1){
+    color: #097fe8;
+}
+main .fourthSec .top a span:nth-child(2){
+    font-size: 1rem;
+}
+main .fourthSec .top a:hover span:nth-child(1){
+    text-decoration: underline;
+    text-decoration-color: #111;
+}
+main .fourthSec .top a:hover span:nth-child(2) {
+    color: #111;
+}
+main .fourthSec .bottom{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 28px;
+}
+main .fourthSec .bottom .left{
+    width: 50%;
+}
+main .fourthSec .bottom .right{
+    width: 50%;
+}
+main .fourthSec .bottom .card{
+    background-color: #f6f5f3;
+    border-radius: 12px;
+    padding: 24px 32px;
+    border: 1px solid #f6f5f3;
+    cursor: pointer;
+}
+main .fourthSec .bottom .lefts.card{
+    height: 100%;
+    background: url("./Assets/company-wiki.avif");
+    background-color: #f6f5f3;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+main .fourthSec .bottom .card svg{
+    width: 54px;
+    aspect-ratio: 1/1;
+}
+main .fourthSec .bottom .card h1{
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+main .fourthSec .bottom .left .lefts.card svg{
+    fill: #f64932;
+    color: #f64932;
+}
+main .fourthSec .bottom .right{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+main .fourthSec .bottom .right .row{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    width: 100%;
+}
+main .fourthSec .bottom .right .row .rights.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+main .fourthSec .bottom .right .row:nth-child(1) .rights.card:nth-child(1) svg{
+    fill: #0980e8;
+    color: #0980e8;
+}
+main .fourthSec .bottom .right .row:nth-child(1) .rights.card:nth-child(2) svg{
+    fill: #ff6d00;
+    color: #ff6d00;
+}
+main .fourthSec .bottom .right .row:nth-child(2) .rights.card:nth-child(1) svg{
+    fill: #ffb10f;
+    color: #ffb10f;
+}
+main .fourthSec .bottom .right .row:nth-child(2) .rights.card:nth-child(2) svg{
+    fill: #f54931;
+    color: #f54931;
+}
+main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(1) svg{
+    fill: #27918d;
+    color: #27918d;
+}
+main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(2) svg{
+    fill: #9949e8;
+    color: #9949e8;
 }
