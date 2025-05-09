@@ -1008,3 +1008,75 @@ main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(2) svg {
         margin-top: 7px;
     }
 }
+
+main .fifthSec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+    margin: 150px auto 0;
+    max-width: 1252px;
+}
+
+main .fifthSec .top h1 {
+    color: #191917;
+    font-size: 3.75rem;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    line-height: 100%;
+    padding-right: 25%;
+}
+
+main .fifthSec .bottom {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+main .fifthSec .bottom .card {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+main .fifthSec .bottom .card:hover h1{
+    color: #78736f;
+}
+
+main .fifthSec .bottom .card img,
+main .fifthSec .bottom .card video {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+main .fifthSec .bottom .card h1 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+main .fifthSec .bottom .card p {
+    color: #78736f;
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 500px) {
+    main .fifthSec .top h1 {
+        font-size: 2rem;
+    }
+
+    main .fifthSec .bottom .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media screen and (max-width: 350px) {
+    main .fifthSec .bottom .card {
+        flex: 1 1 100%;
+    }
+}
