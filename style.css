@@ -805,7 +805,6 @@ main .fourthSec .bottom {
     display: flex;
     align-items: stretch;
     gap: 28px;
-    margin-bottom: 2000px;
 }
 
 main .fourthSec .bottom .left {
@@ -832,7 +831,6 @@ main .fourthSec .bottom .lefts.card {
     height: 100%;
     border-radius: 12px;
     overflow: hidden;
-    gap: 30px;
 }
 
 main .fourthSec .bottom .lefts.card .img-wrapper {
@@ -856,6 +854,7 @@ main .fourthSec .bottom .lefts.card picture {
     max-height: calc(100% + 24px * 2);
     margin: auto;
 }
+
 main .fourthSec .bottom .lefts.card img {
     color: transparent;
     object-fit: cover;
@@ -949,4 +948,63 @@ main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(1) svg {
 main .fourthSec .bottom .right .row:nth-child(3) .rights.card:nth-child(2) svg {
     fill: #9949e8;
     color: #9949e8;
+}
+
+@media screen and (max-width: 1000px) {
+    main .fourthSec .bottom {
+        flex-direction: column;
+    }
+
+    main .fourthSec .bottom .left {
+        width: 100%;
+    }
+
+    main .fourthSec .bottom .left .lefts.card {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    main .fourthSec .bottom .left .lefts.card {
+        gap: 30px;
+    }
+
+    main .fourthSec .bottom .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main .fourthSec .bottom .right .row {
+        flex-direction: column;
+    }
+
+    main .fourthSec .bottom .right .row {
+        width: 100%;
+    }
+
+    main .fourthSec .bottom .right .row .rights.card {
+        width: 100%;
+    }
+
+    main .fourthSec .top h1 {
+        font-size: 2rem;
+    }
+
+    main .fourthSec .bottom .card .txt svg {
+        width: 35px !important;
+    }
+
+    main .fourthSec .bottom .card svg {
+        width: 35px !important;
+    }
+
+    main .fourthSec .bottom .card h1 {
+        font-size: 1rem;
+        margin-top: 7px;
+    }
+
+    main .fourthSec .bottom .lefts.card .txt h1 {
+        font-size: 1rem;
+        margin-top: 7px;
+    }
 }
