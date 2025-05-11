@@ -1045,7 +1045,7 @@ main .fifthSec .bottom .card {
     justify-content: flex-start;
 }
 
-main .fifthSec .bottom .card:hover h1{
+main .fifthSec .bottom .card:hover h1 {
     color: #78736f;
 }
 
@@ -1075,8 +1075,201 @@ main .fifthSec .bottom .card p {
         flex: 1 1 calc(50% - 20px);
     }
 }
+
 @media screen and (max-width: 350px) {
     main .fifthSec .bottom .card {
         flex: 1 1 100%;
+    }
+}
+
+main .sixthSec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+    margin: 150px auto 0;
+    max-width: 1252px;
+}
+
+main .sixthSec .top {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+main .sixthSec .top h1 {
+    color: #191917;
+    font-size: 3.75rem;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    line-height: 100%;
+    padding-right: 25%;
+}
+
+main .sixthSec .bottom {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+}
+
+main .sixthSec .bottom .left {
+    width: 50%;
+}
+
+main .sixthSec .bottom .right {
+    width: 50%;
+}
+
+main .sixthSec .bottom .card {
+    background-color: #f6f5f3;
+    border-radius: 12px;
+    padding: 24px 32px;
+    border: 1px solid #f6f5f3;
+    cursor: pointer;
+}
+
+main .sixthSec .bottom .lefts.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+main .sixthSec .bottom .lefts.card .img-wrapper {
+    margin-top: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    width: 100%;
+    margin: auto auto 0 0;
+    align-self: flex-start;
+    position: relative;
+}
+
+main .sixthSec .bottom .lefts.card picture {
+    display: flex;
+    height: calc(100% + 24px);
+    width: calc(100% + 32px);
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-top-left-radius: 0.75rem;
+    max-width: calc(100% + 32px * 2);
+    max-height: calc(100% + 24px * 2);
+    margin: auto;
+}
+
+main .sixthSec .bottom .lefts.card img {
+    color: transparent;
+    object-fit: cover;
+    object-position: right bottom;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1170px;
+    height: auto;
+    display: block;
+    margin-right: 0;
+    align-self: flex-end;
+    justify-self: flex-start;
+    margin-right: auto;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+main .sixthSec .left .lefts.card .txt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .sixthSec .left .lefts.card .txt h1 {
+    font-size: 2.5rem;
+}
+
+main .sixthSec .left .lefts.card .txt .btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+main .sixthSec .left .lefts.card .txt .btn button {
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    background-color: #0582ff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+main .sixthSec .left .lefts.card .txt .btn button:nth-child(2) {
+    background-color: #fff;
+    color: #000;
+}
+
+main .sixthSec .right .lefts.card .txt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .sixthSec .right .lefts.card .txt h1 {
+    font-size: 2.5rem;
+}
+
+main .sixthSec .right .lefts.card .txt .btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+main .sixthSec .right .lefts.card .txt .btn button {
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    background-color: #0582ff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+main .sixthSec .right .lefts.card .txt .btn button:nth-child(1):hover {
+    background-color: #045ac3;
+}
+main .sixthSec .left .lefts.card .txt .btn button:nth-child(1):hover {
+    background-color: #045ac3;
+}
+main .sixthSec .right .lefts.card .txt .btn button:nth-child(2):hover {
+    background-color: #eaeaea;
+}
+main .sixthSec .left .lefts.card .txt .btn button:nth-child(2):hover {
+    background-color: #eaeaea;
+}
+
+main .sixthSec .right .lefts.card .txt .btn button:nth-child(2) {
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 700px) {
+    main .sixthSec .bottom {
+        flex-direction: column;
+    }
+
+    main .sixthSec .bottom .left,
+    main .sixthSec .bottom .right {
+        width: 100%;
+    }
+
+    main .sixthSec .bottom .lefts.card {
+        gap: 30px;
     }
 }
