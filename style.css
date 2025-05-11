@@ -1280,6 +1280,12 @@ main .sixthSec .right .lefts.card .txt .btn button:nth-child(2) {
     }
 }
 
+@media screen and (max-width: 500px) {
+    main .sixthSec .top h1 {
+        font-size: 2rem;
+    }
+}
+
 footer {
     padding: 50px round(up, 7.22223%, .2rem) 50px;
 }
