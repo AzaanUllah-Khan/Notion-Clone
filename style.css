@@ -264,7 +264,8 @@ header nav .toggle i {
 }
 
 main {
-    padding: 0 round(up, 7.22223%, .2rem);
+    padding: 0 round(up, 7.22223%, .2rem) 50px;
+    border-bottom: 1px solid #ebebeb;
 }
 
 main .firstSec {
@@ -388,7 +389,7 @@ main .first.left .buttons button:nth-child(2) {
 
 @media screen and (max-width: 500px) {
     main {
-        padding: 0 30px;
+        padding: 0 30px 50px;
     }
 
     main .firstSec {
@@ -1241,15 +1242,19 @@ main .sixthSec .right .lefts.card .txt .btn button {
     font-size: 1rem;
     cursor: pointer;
 }
+
 main .sixthSec .right .lefts.card .txt .btn button:nth-child(1):hover {
     background-color: #045ac3;
 }
+
 main .sixthSec .left .lefts.card .txt .btn button:nth-child(1):hover {
     background-color: #045ac3;
 }
+
 main .sixthSec .right .lefts.card .txt .btn button:nth-child(2):hover {
     background-color: #eaeaea;
 }
+
 main .sixthSec .left .lefts.card .txt .btn button:nth-child(2):hover {
     background-color: #eaeaea;
 }
@@ -1271,5 +1276,53 @@ main .sixthSec .right .lefts.card .txt .btn button:nth-child(2) {
 
     main .sixthSec .bottom .lefts.card {
         gap: 30px;
+        padding-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px round(up, 7.22223%, .2rem) 50px;
+}
+
+footer .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1252px;
+}
+
+footer .footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+footer .footer .logo h1 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+footer .footer .logo img {
+    width: 35px;
+}
+
+footer .footer .icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+footer .footer .icons i {
+    color: #575757;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 500px) {
+    footer .footer{
+        flex-direction: column;
+        gap: 20px;
     }
 }
